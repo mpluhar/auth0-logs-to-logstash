@@ -20,10 +20,10 @@ module.exports = (storage) =>
     const now = Date.now();
     let logstashUrl = config('LOGSTASH_URL');
 
-    if (config('LOGSTASH_TOKEN')) {
-      const parsedUrl = url.parse(logstashUrl);
-      logstashUrl = (parsedUrl.query) ? `${logstashUrl}&token=${config('LOGSTASH_TOKEN')}` : `${logstashUrl}?token=${config('LOGSTASH_TOKEN')}`;
-    }
+    const parsedUrl = url.parse(logstashUrl);
+    logstashUrl = ${logstashUrl}'/logstash-' + date.format('YYYY.MM.DD') + 'log';
+      //var url = ctx.data.ELASTICSEARCH_URL + '/' + ctx.data.ELASTICSEARCH_INDEX + '-' + date.format('YYYY.MM.DD') + '/log'
+
 
     const sendLog = function (log, callback) {
       if (!log) {
