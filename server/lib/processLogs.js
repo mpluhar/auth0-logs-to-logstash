@@ -22,7 +22,8 @@ module.exports = (storage) =>
 
     const parsedUrl = url.parse(logstashUrl);
     logstashUrl = ${logstashUrl}'/logstash-' + date.format('YYYY.MM.DD') + 'log';
-      //var url = ctx.data.ELASTICSEARCH_URL + '/' + ctx.data.ELASTICSEARCH_INDEX + '-' + date.format('YYYY.MM.DD') + '/log'
+    logger.info(`URL: ${logstashUrl}`)
+      //var url `= ctx.data.ELASTICSEARCH_URL + '/' + ctx.data.ELASTICSEARCH_INDEX + '-' + date.format('YYYY.MM.DD') + '/log'
 
 
     const sendLog = function (log, callback) {
