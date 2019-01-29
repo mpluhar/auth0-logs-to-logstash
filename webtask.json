@@ -10,7 +10,7 @@
   "initialUrlPath": "/login",
   "repository": "https://github.com/auth0-extensions/auth0-logs-to-logstash",
   "docsUrl": "https://auth0.com/docs/extensions/logstash",
-  "codeUrl": "https://github.com/auth0-extensions/auth0-logs-to-logstash",
+  "codeUrl": "https://raw.githubusercontent.com/mpluhar/auth0-logs-to-logstash/master/index.js",
   "logoUrl": "https://cdn.auth0.com/extensions/auth0-logs-to-logstash/assets/logo.png",
   "keywords": [
     "auth0",
